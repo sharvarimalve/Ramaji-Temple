@@ -1,0 +1,387 @@
+/* ========== NAVBAR/HEADER ========== */
+*{
+font-family: "Kodchasan", sans-serif;
+}
+.navbar {
+  background-color: #9b2c0d;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold; 
+}
+
+.navbar-logo img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.navbar-links {
+  display: flex;
+  gap:40px;
+  align-items: center;
+  font-size: 22px;
+  padding-left: 100px;
+
+}
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-contact {
+  margin-left: 90px;
+  font-size: 22px;
+}
+
+/* Hamburger */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-toggle .bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-links {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+    margin-top: 10px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-contact {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+/* welcome  */
+
+
+.welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 200px;
+}
+
+.welcome-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 45px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  .welcomeimg{
+    border-radius: 45px;
+    height:463px;
+    width:463px;
+  } 
+.imagestyle{
+  border-radius: 49px;
+  width: 740 px;
+  height: 480px;
+}
+.welcome-text {
+  max-width: 500px;
+}
+
+.welcome-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.welcome-section1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 200px;
+}
+.maintext{
+  font-size:22px;
+}
+.heading{
+  font-size: 47px;
+}
+.button {
+  border-radius: 100px;
+  background-color: #AF3100;
+  color: white;
+  border: #AF3100;
+  padding: 15px 15px 15px 15px;
+  display: block;
+  margin: 0 auto;
+  width:172px;
+  height:65px;
+  font-size:22px;
+}
+
+/* ---------- Responsive for smaller screens ---------- */
+@media (max-width: 768px) {
+  .welcome-section {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .welcome-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .welcome-text h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-text p {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}
+
+/* gallery */
+
+/* Container for the entire gallery */
+
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically if needed */
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-row {
+  display: flex;
+  margin-bottom: 20px;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: 346;
+  object-fit: cover;
+  width: 437px;
+  
+  transition: transform 0.3s ease;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .img-fluid {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+  }
+}
+
+/* profile card */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.profile-card {
+  background-color: #a13200;
+  border-radius: 45px;
+  max-width: 413px;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+}
+
+.profile-image {
+  width: 60%;
+  max-width: 243px;
+  aspect-ratio: 1 / 1;
+  background-color: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+}
+
+.profile-name {
+  font-size: 22px;
+  margin: 10px 0 5px 0;
+  padding-top: 50px;
+}
+
+.profile-title {
+  font-size: 22px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .profile-card {
+    width: 45%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-card {
+    width: 90%;
+  }
+}
+
+/* Footer start */
+/* Footer start */
+.subscribe-bg {
+  background-color: #AF3100;
+  color: white;
+  padding: 20px;
+}
+
+/* Join text aligned properly for responsiveness */
+.join-text {
+  cursor: pointer;
+  padding-left: 550px;
+  font-size: 22px;
+}
+
+/* Input box */
+input.form-control {
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* ---------- Responsive Styles ---------- */
+
+/* Tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+  .join-text {
+    padding-left: 300px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 15px;
+  }
+
+  input.form-control {
+    font-size: 15px;
+  }
+
+  .subscribe-bg {
+    padding: 15px;
+  }
+}
+
+/* Mobiles (max-width: 767px) */
+@media (max-width: 767px) {
+  .join-text {
+    padding-left: 0;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  input.form-control {
+    font-size: 14px;
+  }
+
+  .subscribe-bg {
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+/* carosal */
+.carousel-container {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-img {
+  height: auto;
+  object-fit: cover;
+}
+
+/* Round dots (indicators) customization */
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color:white;
+  margin: 0 5px;
+}
+
+.carousel-indicators .active {
+  background-color:#AF3100;
+}
+
+/* Optional: Add smooth transitions */
+.carousel-item {
+  transition: opacity 1s ease-in-out;
+}
